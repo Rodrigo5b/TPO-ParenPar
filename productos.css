@@ -236,10 +236,11 @@ footer.activar
 .nav-oscuros > a{
     background: #252525;
 }
-.titulo-h3{
+.main-activar> .productos > .titulo-categoria{
     border: 1px solid white;
     background: none;
 }
-.titulo-h3 > h3 {
+
+.main-activar> .productos > .titulo-categoria > h3{
     color: white;
 }
