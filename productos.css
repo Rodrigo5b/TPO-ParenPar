@@ -15,7 +15,7 @@ body{
     background: #F37244;
     display: grid;
     margin: auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
     padding: 30px 115px;
     max-width: 1210px;
     align-items: center;
@@ -201,20 +201,26 @@ footer{
     position: relative;
     width: 80px;
     height: 40px;
-    background-color: white;
     cursor: pointer;
     box-shadow: -5px 0px 4px #2d2d2d;
     border-radius: 25px;
+    border: 1px solid white;
 }
 .boton-oscuro{
+
     position: absolute;
     top: 0;
     left: 0;
     width: 40px;
     height: 40px;
     border-radius: 25px;
-    background: #D9D9D9;
     box-shadow: -5px 0px 4px #2d2d2d;
+    
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 
 #caja-boton.activar .boton-oscuro{
@@ -243,4 +249,14 @@ footer.activar
 
 .main-activar> .productos > .titulo-categoria > h3{
     color: white;
+}
+
+.sol{
+    display: none;
+}
+.aparecer{
+    display: block;
+}
+.desaparecer{
+    display: none;
 }
