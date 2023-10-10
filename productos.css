@@ -15,8 +15,10 @@ body{
 .cabecera{
     background: #F37244;
     display: grid;
+    justify-items: center;
+    align-content: center;
     margin: auto;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto;
     padding: 30px 115px;
     max-width: 1210px;
     align-items: center;
@@ -28,6 +30,7 @@ body{
     background: rgba(0, 0, 0, 0.40);
     border-radius: 50px;
     padding: 0 1rem;
+    width: 100%;
 }
 .buscador{
     height: 90px;
@@ -35,9 +38,11 @@ body{
     background: none;
     text-align: start;
     font-size: 28px;
+    width: 100%;
 }
 .buscador::placeholder{
     color: white;
+    text-align: center;
 }
 .caja-perfil{
     display: flex;
@@ -251,7 +256,7 @@ footer.activar
     background: #252525;
 }
 .main-activar> .productos > .titulo-categoria{
-    border: 1px solid white;
+    border: 2px solid white;
     background: none;
 }
 
@@ -267,4 +272,27 @@ footer.activar
 }
 .desaparecer{
     display: none;
+}
+
+@media screen and (max-width:1024px) {
+    main{
+    }
+    .cabecera{
+        padding: 44px 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-logo{
+        width: 100%;
+    }
+    .caja-buscador{
+        width: auto;
+    }
+    .main-titulo{
+        padding: 18px 0;
+    }
+    h2{
+        font-size: 28px;
+    }
 }
