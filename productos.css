@@ -413,6 +413,7 @@ footer.activar
         min-width: 160px;
         height: 200px;
         align-items: center;
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.40)
     }
     .caja-footer{
         display: block;
