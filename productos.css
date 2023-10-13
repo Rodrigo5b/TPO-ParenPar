@@ -36,7 +36,7 @@ body{
     height: 90px;
     border: none;
     background: none;
-    text-align: start;
+    text-align: center;
     font-size: 28px;
     width: 100%;
 }
@@ -328,9 +328,8 @@ footer.activar
         width: calc(100% - 10vw);
     }
     .prod-item{
-        padding: 0;
+        padding:10px 0 ;
         width: 175px;
-        height: 200px;
         align-items: center;
         text-align: center;
     }
@@ -411,7 +410,6 @@ footer.activar
     .prod-item{
         padding: 0;
         min-width: 160px;
-        height: 200px;
         align-items: center;
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.40)
     }
@@ -423,8 +421,11 @@ footer.activar
     }
     .footer-texto p, .footer-texto i {
         font-size: 14px;
+        word-wrap: break-word;
+        word-break: break-all;
     }
     footer {
         padding: 12px 0;
     }
+    
 }
