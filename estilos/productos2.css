@@ -61,6 +61,7 @@
     width: 80px;
     height: 40px;
     background: none;
+    cursor: pointer;
     border-radius: 50px;
     border: 1px solid var(--color-primario);
 }
