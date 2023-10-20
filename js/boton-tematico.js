@@ -1,7 +1,7 @@
 var boton = document.getElementById("caja-boton")
-
+var cuerpo = document.querySelector(".cuerpo")
 
 boton.onclick = function(){
     boton.classList.toggle('activar')
-    body.classList.toggle("rojo")
+    cuerpo.classList.toggle("bg-alter")
 }
