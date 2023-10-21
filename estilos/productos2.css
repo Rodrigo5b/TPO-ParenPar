@@ -1,17 +1,33 @@
 @import url(../estilos/root.css);
-/* Cabecera */
+
+
+/* Cabecera -------------------------------------------------------------------------*/
 .cabecera{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 25px 25px;
     background: var(--background-naranja);
 }
 .cabecera > img{
     height: 50px;
 }
-.logo-pagina{
-    width: 100px;
+.div-buscador{
+    width: fit-content;
+    height: 30px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.buscador{
+    background: none;
+    border: none;
+    padding: 0 17px;
+}
+.buscador::placeholder{
+    color: #FFE6DB;
 }
 .bar-menu{
     width: 30px;
@@ -34,7 +50,7 @@
 .line3-active{
     transform: rotate(-45deg) translate(-2px, 2px);
 }
-/* Barra de navegación */
+/* Barra de navegación -------------------------------------------------------------------------*/
 .nav{
     height: fit-content;
     width: 100%;
@@ -56,10 +72,10 @@
     font-size: 16px;
     font-weight: bold;
 }
-/* Boton tema */
+/* Boton tema -------------------------------------------------------------------------*/
 #caja-boton{
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     background: none;
     cursor: pointer;
     border-radius: 50px;
@@ -69,7 +85,7 @@
     position: absolute;
 }
 .activar .div-boton{
-    transform: translate(40px);
+    transform: translate(30px);
 }
 .luna{
     display: none;
@@ -83,13 +99,15 @@
     background: var(--background-alter);
 }
 
-/* Contenido de la página */
+/* Contenido de la página -------------------------------------------------------------------------*/
 .contenido{
     text-align: center;
 }
 h1{
-    padding: 9px 0;
+    padding: 11px 0;
     background: var(--background-secundario);
+    font-size: 22px;
+    font-weight: normal;
 }
 .div-categorias{
     display: flex;
@@ -100,16 +118,18 @@ h1{
 }
 h3{
     color:var(--color-terciario);
-    padding: 5px 34px;
+    padding: 4px 24px;
     background: var(--color-primario);
     border: 1px solid var(--color-terciario);
     border-radius: 16px;
+    font-size: 18px;
 }
 h5{
     color:var(--color-terciario);
-    padding: 4px 11px;
+    padding: 4px 12px;
     background: var(--color-primario);
     border: 1px solid var(--color-terciario);
+    font-size: 14px;
 }
 
 .carrousel-cartas{
@@ -138,14 +158,14 @@ h5{
     width: 156px;
     object-fit: cover;
 }
-/* Pie de Página */
+/* Pie de Página ---------------------------------------------------------------------------------------*/
 .footer,.footer-div,.footer-div-textos{display: flex;}
 .footer{
     background: var(--background-naranja);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 33px;
+    margin-top: 30px;
     padding: 15px 0 30px;
 }
 .link-footer{
@@ -155,7 +175,7 @@ h5{
     width: 80px;
 }
 .footer-div{
-    padding: 0 25px;
+    padding: 5px 25px 0px;
     gap: 20px;
 }
 .img-seguridad{
@@ -168,7 +188,22 @@ h5{
     word-wrap: break-word;
     word-break: break-all;
 }
+.logo-responsive{
+    display: none;
+}
 @media (min-width:660px) {
+
+    /* Header ----------------------------- */
+
+    .cabecera{
+        padding: 30px 56px;
+    }
+    .bar-menu{
+        display: none;
+    }
+    .logo-responsive{
+        display: block;
+    }
     .carrousel-cartas{
         overflow-x: unset;
         overscroll-behavior-x: auto;
