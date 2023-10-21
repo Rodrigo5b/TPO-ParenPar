@@ -11,7 +11,7 @@
 
 ## Screenshot del TPO
 
-![screenshot](https://i.postimg.cc/T3xcfC7V/Screenshot-4.png)
+![screenshot](https://i.postimg.cc/hG6kCks8/Screenshot-4.png)
 
 ## Referencias que utizamos en nuestro proyecto.
 
