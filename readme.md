@@ -11,13 +11,22 @@
 
 ## Screenshot del TPO
 
-![screenshot](https://i.postimg.cc/QCLLmXhL/Screenshot-1.png)
+![screenshot](https://i.postimg.cc/T3xcfC7V/Screenshot-4.png)
 
 ## Referencias que utizamos en nuestro proyecto.
 
  Nos guiamos de los siguientes enlaces como metodo de apoyo:
 
 - [Video para hacer el boton tematico](https://www.youtube.com/watch?v=_52c1vb7D_I&ab_channel=CodeGlitch)
+- [Imágenes SVG](https://www.svgrepo.com/)
+- [Imágenes SVG](https://vectorizer.ai/)
+- [Subir imagenes a internet](https://postimages.org/es/)
+- [Imágenes JPG Productos](https://unsplash.com/es)
+- [Imágenes JPG Productos](https://unsplash.com/es)
+- [CSS y HTML](https://www.w3schools.com/)
+
+
+
 
 ## Contacto
 * Hernán Rodrigo Bustamante:

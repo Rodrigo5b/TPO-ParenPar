@@ -129,7 +129,6 @@ h5{
 .carta b , .carta p{
     margin-top: 2px;
     color: var(--color-secundario);
-
 }
 .carta-imagen{
     background: var(--color-primario);
@@ -187,6 +186,5 @@ h5{
     }
     .carta-img{
         margin: 10px 0;
-
     }
 }
