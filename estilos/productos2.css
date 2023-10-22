@@ -1,7 +1,7 @@
 @import url(../estilos/root.css);
 /* Cabecera -------------------------------------------------------------------------*/
 .cuerpo{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
 }
 .cabecera{
@@ -45,13 +45,9 @@
     margin-top: 6px;
     transform-origin: 0px 100%;
 }
-.line1-active{
-    transform: rotate(45deg) translate(-2px,1px);
-}
-.line2-active{opacity: 0;}
-.line3-active{
-    transform: rotate(-45deg) translate(-2px, 2px);
-}
+.line1-active{ transform: rotate(45deg) translate(-2px,1px); }
+.line2-active{ opacity: 0; }
+.line3-active{ transform: rotate(-45deg) translate(-2px, 2px); }
 /* Barra de navegación -------------------------------------------------------------------------*/
 .nav{
     height: fit-content;
@@ -62,14 +58,17 @@
 }
 .nav-activo{
     display: block;
+    text-align: center;
+}
+
+.li{
+    padding: 3rem 0;
 }
 .link{
-    text-align: center;
-    padding: 3rem 0;
-    border-bottom: 1px solid;
     cursor: pointer;
 }
-/* Boton tema -------------------------------------------------------------------------*/
+
+/* Boton tema -------------------------------------------------------------------------------*/
 #caja-boton{
     width: 60px;
     height: 30px;
@@ -87,9 +86,8 @@
 .luna{ display: none; }
 .activar > .div-boton > .sol{ display: none; }
 .activar > .div-boton > .luna{ display: block; }
-.bg-alter{background: var(--background-alter2);}
-.bg-alter .cabecera, .bg-alter .contenido-titulo, .bg-alter .footer{background: var(--background-alter);}
-
+.bg-alter, .bg-alter .nav-activo{background: var(--background-alter2);}
+.bg-alter .cabecera, .bg-alter .contenido-titulo, .bg-alter .footer {background: var(--background-alter);}
 /* Contenido de la página -------------------------------------------------------------------------*/
 .contenido{
     text-align: center;
@@ -159,7 +157,6 @@ h5{
     padding: 15px 25px 30px;
 }
 .link-footer{
-    cursor: pointer;
     justify-content: center;
 }
 .logo-b{
@@ -232,6 +229,7 @@ h5{
     .activar .div-boton{
         transform: translate(40px);
     }
+    .bg-alter .link{ background: var(--background-alter);}
     /* Nav responsive  ---------------*/
     .nav-responsive{
         display: flex;
@@ -352,7 +350,7 @@ h5{
     .nav-responsive{
         height: 120px;
         justify-content: space-evenly;
-        max-width: 1440px;
+        /* max-width: 1440px; */
     }
     .link{
         padding: 15px 51px;
