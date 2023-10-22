@@ -1,6 +1,6 @@
 @import url(./root.css);
 .cabecera{
-    background: var(--background-fuerte);
+    background: var(--background-naranja);
     display: grid;
     justify-items: center;
     align-content: center;
@@ -56,7 +56,7 @@
     width: 80%;
 }
 .nav-links{
-    background: var(--background-fuerte);
+    background: var(--background-naranja);
     text-align: center;
     border-radius: 2rem;
     height: 56px;
@@ -72,7 +72,7 @@
     max-width: 100%;
     font-weight: bold;
     transform: translateX(-15%);
-    background: var(--background-fuerte);
+    background: var(--background-naranja);
     box-shadow: var(--sombra);
 }
 .nav-span{
@@ -88,7 +88,7 @@ main{
     padding-bottom: 6.75rem;
 }
 .main-titulo{
-    background: var(--background-fuerte);
+    background: var(--background-naranja);
     text-align: center;
     margin: auto;
     padding: 2rem 115px;
@@ -175,7 +175,7 @@ h2{
     color: var(--color-h3);
 }
 footer{
-    background: var(--background-fuerte);
+    background: var(--background-naranja);
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
