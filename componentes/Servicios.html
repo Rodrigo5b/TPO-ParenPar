@@ -4,105 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" type="text/css" href="../estilos/EstiloServicios.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/servicios.css">
     <link rel="shortcut icon" href="../img/logo-n.svg" type="x-icon">
-
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/root.css">
 </head>
-<body>
-    <header class="header" id="inicio">
-        <section class="cabecera">
-            <div>
-                <a href="#cabecera" class="logo-header">
-                    <img src="../img/svg/LogoParEnPar.svg" alt="Logo de la página" class="img-logo">
-                </a>
-            </div>
-
-            <div class="caja-buscador">
-                <input class="buscador" type="text" placeholder="Busca alimentos o marcas...">
-                <a href="" class="link-header">
-                    <img src="../img/svg/Lupalupa.svg" alt="Lupa del buscador" class="img-header">
-                </a>
-            </div>
-            <div id="caja-boton">
-                <!-- <a href="" class="carrito-header"><img src="img/Carritocarrito.svg" alt="" class="img-carrito"></a>
-                <span>Mi cuenta</span> -->
-                <div class="boton-oscuro">
-                    <img class="sol" width="40px" src="../img/svg/sun.svg" alt="Tematica Clara">
-                    <img class="luna" width="40px" src="../img/svg/moon.png" alt="Tematica Oscura">
-                </div>
-                <!-- <a href="" class="link-header"><img src="img/Perfilperfil.svg" alt="" class="img-header"></a> -->
-            </div>
-            <!-- <div class="caja-todo">
-
-            </div> -->
-
-        </section>
-        <section class="nav">
-            <div class="links">
-                <a href="../index.html" class="nav-links">
-                    <span class="nav-span">Inicio</span>
-                </a>
-                <a href="./Servicios.html" class="nav-links">
-                    <span class="nav-span">Servicios</span>
-                </a>
-                <a href="./productos.html" class="nav-links">
-                    <span class="nav-span">Productos</span>
-                </a>
-                <a href="./Contacto.html" class="nav-links">
-                    <span class="nav-span">Contacto</span>
-                </a>
-            </div>
-        </section>
-    </header>
-    <main>
-        <!-- Add your content here -->
-        <div class="main-titulo" id="main-titulo">
-            <h2 class="h2">Servicios</h2>
+<body class="cuerpo">
+    <header class="cabecera">
+        <img class="logo-responsive" src="../img/svg/LogoParEnPar.svg" alt="Logo cabecera">
+        <div class="bar-menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
         </div>
+        <div id="caja-boton">
+            <div class="div-boton">
+                <img class="sol" width="30px" src="../img/svg/sun.svg" alt="Tematica Clara">
+                <img class="luna" width="30px" src="../img/svg/moon.png" alt="Tematica Oscura">
+            </div>
+        </div>
+    </header>
+    <ul class="nav nav-responsive" id="nav">
+        <li class="li">
+            <a class="link" href="../index.html">Inicio</a>
+        </li>
+        <li class="li">
+            <a class="link" href="#">Servicios</a>
+        </li>
+        <li class="li">
+            <a class="link" href="../componentes/productos.html">Productos</a>
+        </li>
+        <li class="li">
+            <a class="link" href="../componentes/Contacto.html">Contacto</a>
+        </li>
+    </ul>
+    <main>
+        <h1 class="contenido-titulo">Productos</h1>
         <div class="box-container">
             <div class="box">
                 <img src="../img/servicios/fotoguarderia.png" width="620px" alt="Service 1">
                 <h3>Guarderia | Vacaciones</h3>
                 <p>¿Te vas de vacaciones y no tenés alguien de confianza con quien dejar a tu mejor amigo? No te preocupes nosotros te ofrecemos el mejor servicio en el cual tu peludo estará en un palacio. </p>
-                <p>Escribinos en Whatsapp </p> <!-- Add the new <p> here -->
+                <p>Escribinos en Whatsapp </p>
             </div>
             <div class="box">
                 <img src="../img/servicios/fotopaseos.png" width="620px" alt="Service 2">
                 <h3>Paseos diurnos y nocturnos</h3>
                 <p>Ofrecemos los mejores paseos perrunos y gatunos del mundo acompañamiento y dietas cientificamente personalizadas para que tu mascota siempre se sienta acompañado y querido por vos</p>
-                <p>Escribinos en Whatsapp </p> <!-- Add the new <p> here -->
+                <p>Escribinos en Whatsapp </p>
             </div>
             <div class="box">
                 <img src="../img/servicios/fotoentrenamiento.png" width="620px" alt="Service 3">
                 <h3>Entrenamiento</h3>
                 <p>Somos especialistas en mejorar la relación entre vos y tu mascota, clases de entrenamiento personalizadas con snuestros profesionales.</p>
-                <p>Escribinos en Whatsapp </p> <!-- Add the new <p> here -->
+                <p>Escribinos en Whatsapp </p>
             </div>
             <div class="box">
                 <img src="../img/servicios/fotopeluqueria.png"  width="620px" alt="Service 4">
                 <h3>Peluqueria</h3>
                 <p>¿Se te complica bañar a tu peludo? Contamos con el mejor plan de baño y peluqueria completo a domicilio</p>
-                <p>Escribinos en Whatsapp </p> <!-- Add the new <p> here -->
+                <p>Escribinos en Whatsapp </p>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="caja-logo">
-            <a href="#inicio">
-                <img class="footer-logo" src="../img/svg/logo-blanco.svg" alt="Logo de la página">
-            </a>
-        </div>
-        <div class="caja-footer">
-            <img src="../img/svg/Vector.svg" alt="Icono de Seguridad">
-            <div class="footer-texto">
-                <p>~Dale amor también amor incondicional~</p>
-                <i>soporteparenpar@gmail.com</i>
-                <p>@Copyright 2023 - Par en Par</p>
+    <footer class="footer">
+        <a href="#" class="link-footer">
+            <img class="logo-b" src="../img/svg/logo-blanco.svg" alt="">
+        </a>
+        <div class="footer-div">
+            <img class="img-seguridad" src="../img/svg/Vector.svg" alt="Imagen de seguridad">
+            <div class="footer-div-textos">
+                <b>~Dale amor también amor incondicional~</b>
+                <b>soporteparenpar@gmail.com</b>
+                <b>@Copyright 2023 - Par en Par</b>
             </div>
-            <img src="../img/svg/Vector.svg" alt="Icono de Seguridad">
+            <img class="img-seguridad" src="../img/svg/Vector.svg" alt="Imagen de seguridad">
         </div>
     </footer>
-    <script src="../js/tematica.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/boton-tematico.js"></script>
 </body>
 </html>

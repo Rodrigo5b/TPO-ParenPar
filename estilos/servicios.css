@@ -1,0 +1,56 @@
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust spacing between boxes */
+    padding: 20px;
+}
+/* Add styles for each box */
+/* Add styles for each box */
+.box {
+    background-color: #F37244; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Style for h3 inside each box */
+.box h3 {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+/* Style for the first <p> inside each box */
+.box p:first-of-type {
+    color: #000; /* Black text */
+    font-weight: bold;
+}
+
+/* Style for the second <p> inside each box */
+.box p:last-of-type {
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
+    font-weight: bold; /* Bold text */
+    padding: 10px;
+    margin: 0;
+}
+
+/* Style for box images */
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add a media query to change the layout for smaller screens */
+@media (max-width: 768px) {
+    .box-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    /* Adjust the box width for smaller screens */
+    .box {
+        width: 100%; /* Full width for boxes on smaller screens */
+    }
+}

@@ -1,5 +1,3 @@
-@import url(../estilos/root.css);
-/* Cabecera -------------------------------------------------------------------------*/
 .cuerpo{
     /* max-width: 1440px; */
     margin: auto;
@@ -32,6 +30,13 @@
 .buscador::placeholder{
     color: #FFE6DB;
 }
+.logo-responsive{
+    display: none;
+}
+.lupa-responsive{
+    display: none;
+    cursor: pointer;
+}
 .bar-menu{
     width: 30px;
     height: 30px;
@@ -48,26 +53,6 @@
 .line1-active{ transform: rotate(45deg) translate(-2px,1px); }
 .line2-active{ opacity: 0; }
 .line3-active{ transform: rotate(-45deg) translate(-2px, 2px); }
-/* Barra de navegación -------------------------------------------------------------------------*/
-.nav{
-    height: fit-content;
-    width: 100%;
-    background: var(--background-secundario);
-    position: absolute;
-    display: none;
-}
-.nav-activo{
-    display: block;
-    text-align: center;
-}
-
-.li{
-    padding: 3rem 0;
-}
-.link{
-    cursor: pointer;
-}
-
 /* Boton tema -------------------------------------------------------------------------------*/
 #caja-boton{
     width: 60px;
@@ -88,103 +73,32 @@
 .activar > .div-boton > .luna{ display: block; }
 .bg-alter, .bg-alter .nav-activo{background: var(--background-alter2);}
 .bg-alter .cabecera, .bg-alter .contenido-titulo, .bg-alter .footer {background: var(--background-alter);}
-/* Contenido de la página -------------------------------------------------------------------------*/
-.contenido{
+/* Barra de navegación -------------------------------------------------------------------------*/
+.nav{
+    height: fit-content;
+    width: 100%;
+    background: var(--background-secundario);
+    position: absolute;
+    display: none;
+}
+.nav-activo{
+    display: block;
     text-align: center;
 }
-.div-categorias{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
-    margin-top: 33px;
+
+.li{
+    padding: 3rem 0;
 }
+.link{
+    cursor: pointer;
+}
+/* titulo */
 h1{
     padding: 11px 0;
     background: var(--background-secundario);
     font-size: 22px;
     font-weight: normal;
-}
-h3,h5{
-    color:var(--color-terciario);
-    background: var(--color-primario);
-    border: 1px solid var(--color-terciario);
-}
-h3{
-    padding: 4px 24px;
-    border-radius: 16px;
-    font-size: 18px;
-}
-h5{
-    padding: 4px 12px;
-    font-size: 14px;
-}
-.carrousel-cartas{
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    padding: 0px 0px 25px 25px;
-    margin-right: 25px;
-}
-.carta{
-    margin-right: 6px;
-    background: var(--background-items);
-    box-shadow: var(--sombra-carta);
-    padding-bottom: 26px;
-    text-align: start;
-    cursor: pointer;
-}
-.carta b , .carta p{
-    padding-left: 8px;
-    margin-top: 2px;
-    color: var(--color-secundario);
-}
-.carta-imagen{
-    background: var(--color-primario);
-}
-.img-productos{
-    height: 86px;
-    width: 156px;
-    object-fit: cover;
-}
-/* Pie de Página ---------------------------------------------------------------------------------------*/
-.footer,.footer-div,.footer-div-textos,.link-footer{display: flex;}
-.footer{
-    background: var(--background-naranja);
-    flex-direction: column;
-    margin-top: 30px;
-    padding: 15px 25px 30px;
-}
-.link-footer{
-    justify-content: center;
-}
-.logo-b{
-    width: 80px;
-    cursor: pointer;
-}
-.footer-div{
-    padding: 5px 0px 0px;
-    justify-content: space-between
-    ;
-    gap: 20px;
-}
-.img-seguridad{
-    width: 20px;
-}
-.footer-div-textos{
-    flex-direction: column;
     text-align: center;
-    font-size: 14px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-.logo-responsive{
-    display: none;
-}
-.lupa-responsive{
-    display: none;
-    cursor: pointer;
 }
 @media (min-width:768px) {
     /* Header ----------------------------- */
@@ -260,57 +174,7 @@ h5{
         padding: 13px 0;
         font-weight: bold;
     }
-    /* Main ---------------------------------------------------- */
-    .div-categorias{
-        padding: 0px 56px;
-        margin-top: 56px;
-    }
-    h3{
-        font-size: 26px;
-        padding: 11px 61px;
-        border-radius: 32px;
-    }
-    h5{
-        font-size: 22px;
-        padding: 7px 33px;
-    }
-    .carrousel-cartas{
-        overflow-x: unset;
-        padding: 0px 56px;
-        margin-right: 0;
-        justify-content: space-between;
-        gap: 6px;
-    }
-    .carta{
-        margin: 0;
-        border-radius: 10px;
-        padding: 17px 7px 10px 7px;
-        width: 100%;
-    }
-    .carta:hover{
-        transform: scale(1.05);
-        background: var(--background-i-hover);
-    }
-    .img-productos{
-        width: 100%;
-        height: 100%;
-        margin: 0px 0px 10px 0px;
-    }
-    /* Pie de página ------------------------------------------------------------ */
-    .footer{
-        padding: 56px 56px 24px;
-    }
-    .footer-div-textos{
-        font-size: 20px;
-    }
-    .logo-b{
-        width: 108px;
-    }
-    .img-seguridad{
-        width: 32px;
-    }
 }
-
 @media (min-width:1280px) {
     /* Cabecera --------------------------------------------- */
     .logo-responsive {
@@ -363,45 +227,5 @@ h5{
         margin-top: 120px;
         font-size: 42px;
         padding: 20px 0;
-    }
-    .div-categorias{
-        padding: 0 162px;
-        margin-top: 98px;
-    }
-    h3{
-        font-size: 28px;
-        padding: 9px 80px;
-    }
-    h5{
-        font-size: 24px;
-        padding: 5px 42px;
-    }
-    .carrousel-cartas{
-        padding: 0 162px;
-        margin-bottom: 80px;
-    }
-    .carta{
-        padding: 20px 20px 25px 15px;
-    }
-    .carta p{
-        font-size: 18px;
-    }
-    .carta b{
-        font-size: 20px;
-    }
-    /* Pie de pagina desktop ------------------------ */
-    .footer{
-        padding: 56px 163px 24px;
-        margin-top: 18px;
-    }
-    .footer-div-textos{
-        font-size: 24px;
-    }
-    .logo-b{
-        width: 190px;
-        margin-bottom: 29px;
-    }
-    .img-seguridad{
-        width: 57px;
     }
 }
