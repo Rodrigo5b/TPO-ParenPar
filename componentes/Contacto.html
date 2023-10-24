@@ -11,58 +11,40 @@
         <title>ParenPar</title>
     </head>
     <body>
-        <header>
-            <div class="logosredes">
-                <div class="logosinternos">
-                    <a href="https://twitter.com/?lang=es" target="_blank">
-                        <img src="../img/contacto/logotwitter.png" alt="logo de la red social twitter">
-                    </a>    
-                </div>
-                <div class="logosinternos">
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <img src="../img/contacto/logoyoutube.png" alt="logo de la red social youtube">
-                    </a>
-                </div>
-                <div class="logosinternos">
-                    <a href="https://www.google.com/maps" target="_blank">
-                        <img src="../img/contacto/logomaps.png" alt="logo de la red social google maps">
-                    </a>
-                </div>
-            </div>    
-                <img src="../img/contacto/PP1.png" id="imagendeparenpar" alt="foto del logo de par en par" >
-            <div class="logosredes">
-                <div class="logosinternos">
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="../img/contacto/logoinstagram.png" alt="logo de la red social instagram">
-                    </a>
-                </div>
-                <div class="logosinternos">
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                        <img src="../img/contacto/logowhatsapp.png" alt="logo de la red social whatsapp">
-                    </a>
-                </div>
-                <div class="logosinternos">
-                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
-                        <img src="../img/contacto/logofacebook.png" alt="logo de la red social facebook">
-                    </a>
-                </div>
-            </div>  
-            <div id="cajaboton">
-                <div class="botoninterno">
-                    <img class="sol" width="40px" src="../img/svg/sun.svg" alt="Tematica Clara">
-                    <img class="luna" width="40px" src="../img/svg/moon.png" alt="Tematica Oscura">
-                </div>
-            </div>  
-        </header>
-    
-        <nav> 
-            <div id="pag">
-                <a href="Inicio.html">Inicio</a>
-                <a href="../componentes/Servicios.html">Servicios</a>
-                <a href="../componentes/productos.html">Producto</a>
-                <a href="../componentes/Contacto.html">Contacto</a>
+        <header class="cabecera">
+            <img class="logo-responsive" src="../img/svg/LogoParEnPar.svg" alt="Logo cabecera">
+            <div class="bar-menu">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
             </div>
-        </nav>
+                <!-- <img class="logo-pagina" src="../img/svg/LogoParEnPar.svg" alt=""> -->
+            <div class="div-buscador">
+                <input class="buscador" type="text" placeholder="Busca alimentos o marcas...">
+            </div>
+            <div id="caja-boton">
+                <div class="div-boton">
+                    <img class="sol" width="30px" src="../img/svg/sun.svg" alt="Tematica Clara">
+                    <img class="luna" width="30px" src="../img/svg/moon.png" alt="Tematica Oscura">
+                </div>
+            </div>
+        </header> 
+        
+        <ul class="nav nav-responsive" id="nav">
+            <li class="li">
+                <a class="link" href="#">Inicio</a>
+            </li>
+            <li class="li">
+                <a class="link" href="#">Productos</a>
+            </li>
+            <li class="li">
+                <a class="link" href="../componentes/Servicios.html">Servicios</a>
+            </li>
+            <li class="li">
+                <a class="link" href="../html/Contacto.html">Contacto</a>
+            </li>
+        </ul>
+
         <h1>Contacto</h1>
 
         <main>
@@ -95,22 +77,21 @@
             </div>
         </main>
 
-        <footer>
-            <div id="logohuesoperro">
-                <img src="../img/contacto/Logo footer.png" alt="pequeño logo de la empresa expresa la palabra par en par. ">
-            </div>
-
-            <div class="foot">
-                <img src="../img/contacto/verif foot.png" alt="pequeño logo de verificacion">
-                <div id="footerparenpar">
-                    <p>Par en par</p>
-                    <p>Dales también tu amor incondicional.</p>
-                    <p>soporte@parenpar.com.ar</p>
-                    <p>© Copyright 2023 / Par en par</p>
+        <footer class="footer">
+            <a href="#" class="link-footer">
+                <img class="logo-b" src="../img/svg/logo-blanco.svg" alt="">
+            </a>
+            <div class="footer-div">
+                <img class="img-seguridad" src="../img/svg/Vector.svg" alt="Imagen de seguridad">
+                <div class="footer-div-textos">
+                    <b>~Dale amor también amor incondicional~</b>
+                    <b>soporteparenpar@gmail.com</b>
+                    <b>@Copyright 2023 - Par en Par</b>
                 </div>
-                <img src="../img/contacto/verif foot.png" alt="pequeño logo de verificacion">
-            </div> 
+                <img class="img-seguridad" src="../img/svg/Vector.svg" alt="Imagen de seguridad">
+            </div>
         </footer>
-        <script src="../js/Contactooscuro.js"> </script>
+        <script src="../js/menu.js"></script>
+        <script src="../js/boton-tematico.js"></script>
     </body>
 </html>

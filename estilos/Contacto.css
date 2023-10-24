@@ -1,8 +1,106 @@
-*{padding: 0;
-    margin: 0;
-    font-family: 'Amaranth', sans-serif;
-    }
-    
+@import url(../estilos/root.css);
+
+/* HEADER */
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+    background: var(--background-naranja);
+}
+.cabecera > img{
+    height: 50px;
+}
+.div-buscador{
+    width: fit-content;
+    height: 30px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.buscador{
+    background: none;
+    border: none;
+    padding: 0 17px;
+}
+.buscador::placeholder{
+    color: #FFE6DB;
+}
+.bar-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.bar-menu span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--background-bar);
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+}
+
+.line1-active{
+    transform: rotate(45deg) translate(-2px,1px);
+}
+.line2-active{opacity: 0;}
+.line3-active{
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+/* nav links*/
+.nav{
+    height: fit-content;
+    width: 100%;
+    background: var(--background-secundario);
+    position: absolute;
+    display: none;
+}
+.nav-activo{
+    display: block;
+}
+.li{
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid;
+}
+.li a:hover{
+    color: #4d4949;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*BOTON TEMATICO*/
+#caja-boton{
+    width: 60px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid var(--color-primario);
+}
+.div-boton{
+    position: absolute;
+}
+.activar .div-boton{
+    transform: translate(30px);
+}
+.luna{
+    display: none;
+}
+.activar > .div-boton > .sol{display: none;}
+.activar > .div-boton > .luna{display: block;}
+.bg-alter{
+    background: var(--background-alter2);
+}
+.bg-alter .cabecera, .bg-alter .contenido-titulo, .bg-alter .footer{
+    background: var(--background-alter);
+}
+
+/*Contenido de la pagina*/
 main{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -10,71 +108,8 @@ main{
 
 body{
         background-color: var(--color-background);
-}
-    
-:root{font-size: 20px;
-    --color-background: #e1cbc2;
-}
-    
-header {
-    background-color: #f37445;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-}
-    
-#imagendeparenpar{
-    border-radius: 1rem;
-    height: 17rem;
-    display: flex;
-    justify-content: center;
-    box-shadow: inset 0 0 90px rgb(255, 255, 255, 0.2);
-}
-    
-.logosredes{
-    border-radius: 1rem;
-    box-shadow: inset 0 0 50px rgb(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 40px;
-}
-    
-.logosinternos:hover{
-    border-radius: 1rem;
-    transform: scale(1.15);
-    transition: transform 0.3s ease-out;
-    scroll-behavior: smooth;
-    box-shadow: inset 0px 5px 10px rgb(255, 255, 255, 0.5);
-}
-    
-#pag {
-    display:flex;
-    justify-content: space-around;
-    margin-top: 1.5rem;
-}
-    
-#pag > a{
-    font-size: 1.2rem;
-    border-radius: 2rem;
-    background-color: #f37445;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    color: #ffffff;
-    width: 9rem ;
-    height: 2.5rem;
-    text-decoration: none;
-}
-    
-#pag > a:hover{
-    transform: scale(1.15);
-    transition: transform 0.3s ease-out;
-    scroll-behavior: smooth;
-    box-shadow: 0px 5px 10px #6D5A53;
-}
-    
+} 
+
 h1{
     display:flex;
     justify-content: center;
@@ -85,7 +120,7 @@ h1{
     margin-top: 1.5rem;
     height: 4rem;
 }
-    
+    /* Formulario */
 span{
     font-size: 1.7rem;
     color: #ffffff;
@@ -139,79 +174,36 @@ input::placeholder{
     color: #ffffff;
     font-size: 1rem;
 }
-    
-footer {
-    background-color: #f37445;
-    display: flex;
+/* footer */
+.footer,.footer-div,.footer-div-textos{display: flex;}
+.footer{
+    background: var(--background-naranja);
     flex-direction: column;
-    height: 9rem;
-}
-    
-.foot {
-    color: #ffffff;
-    display: flex;
-    gap: 3.5rem;
-    text-align: center;
-    justify-content: center;
-    height: 3rem;
-}
-    
-#logohuesoperro{
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    padding: 15px 0 30px;
 }
-
-#cajaboton{
-    display: grid;
-    grid-row: 2;
-    grid-column: 3;
-    margin-left: 14rem;
-    margin-bottom: 0.3rem;
-    width: 4.3rem;
-    height: 2.3rem;
+.link-footer{
     cursor: pointer;
-    box-shadow: -5px 0px 4px #2d2d2d;
-    border-radius: 25px;
-    border: 1px solid white;
 }
-
-.botoninterno{
-    transform: scale(.7);
-    background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
-    border-radius: 25px;
-    box-shadow: 3px 3px 8px #c4c4c4,
-                -3px -3px 8px #fff;
+.logo-b{
+    width: 80px;
 }
-
-#cajaboton.active .toggle {
-    left: 40px;
+.footer-div{
+    padding: 5px 25px 0px;
+    gap: 20px;
 }
-
-.botoninterno.active{
-    background-color: #635555;
+.img-seguridad{
+    width: 20px;
 }
-body.active, footer.active, header.active{
-    background-color: #0f0f0f;
+.footer-div-textos{
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
-form.active {
-    background-color: #303030;
-    box-shadow: inset 0 0 100px #ffffff;
-}
-#pag.active > a{
-    background-color: #474747;
-    box-shadow: inset 0 0 50px #020202;
-}
-form.active > input, form.active > textarea {
-    background-color: #0f0f0f;
-}
-form.active > input::placeholder{
-    
-}
-h1.active, h2.active {
-    background-color: #3b3b3b;
-    box-shadow: inset 0 0 50px #020202;
-}
-#pag.active{
-    background-color: #0f0f0f;
+.logo-responsive{
+    display: none;
 }
