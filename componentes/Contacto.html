@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../estilos/header.css">
+        <link rel="stylesheet" href="../estilos/footer.css">
         <link rel="stylesheet" href="../estilos/Contacto.css">
         <link rel="shortcut icon" href="../img/contacto/PP1.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Quicksand&display=swap" rel="stylesheet">
         <title>ParenPar</title>
     </head>
-    <body>
+    <body class="cuerpo">
         <header class="cabecera">
             <img class="logo-responsive" src="../img/svg/LogoParEnPar.svg" alt="Logo cabecera">
             <div class="bar-menu">
@@ -19,10 +21,6 @@
                 <span class="line3"></span>
             </div>
             <!-- <img class="logo-pagina" src="../img/svg/LogoParEnPar.svg" alt=""> -->
-            <div class="div-buscador">
-                <input class="buscador" type="text" placeholder="Busca alimentos o marcas...">
-                <img width="40px" class="lupa-responsive" src="../img/svg/Lupalupa.svg" alt="Lupa">
-            </div>
             <div id="caja-boton">
                 <div class="div-boton">
                     <img class="sol" width="30px" src="../img/svg/sun.svg" alt="Tematica Clara">
@@ -45,15 +43,15 @@
             </li>
         </ul>
 
-        <h1>Contacto</h1>
-
-        <main>
-            <div id="formulario">
+        <main class="contenido">
+            <h1 class="contenido-titulo">Contacto</h1>
+            
+            <section class="contenedorform">
                 <div id="perro">
                     <img src="../img/contacto/perrito.png" alt="foto de un perro pequeño">
                 </div>
-                <form method="post">
-                    <h2><span>Formulario de contacto</span></h2>
+                <form class="formulario" method="post">
+                    <h2>Formulario de contacto</h2>
 
                     <label for="nombre"> Nombre: </label>
                     <input type="text" name="Nombre" id="nombre" maxlength="100" placeholder="Aquí coloque su nombre" >
@@ -74,7 +72,7 @@
                     
                     <input type="submit" value="Enviar">
                 </form>
-            </div>
+            </section>
         </main>
 
         <footer class="footer">
