@@ -1,56 +1,115 @@
 .box-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Adjust spacing between boxes */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
     padding: 20px;
 }
-/* Add styles for each box */
-/* Add styles for each box */
+
 .box {
-    background-color: #F37244; /* Background color */
-    color: #fff; /* Text color */
+    background-color: #F37244; 
+    color: #fff; 
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* Style for h3 inside each box */
+
+p {
+padding: 16px 6px;
+color: #1e1e1e;
+}
+
 .box h3 {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    background-color: #fff; 
+    color: #000; 
     padding: 10px;
     margin: 0;
     border-radius: 10px;
 }
-/* Style for the first <p> inside each box */
-.box p:first-of-type {
-    color: #000; /* Black text */
+
+.box p {
+    color: #000;
     font-weight: bold;
 }
 
-/* Style for the second <p> inside each box */
-.box p:last-of-type {
-    color: #fff; /* White text */
-    background-color: #000; /* Black background */
-    font-weight: bold; /* Bold text */
+.boxwsp {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #000; 
+}
+
+
+
+
+.box span {
+    color: #fff; 
+    background-color: #000; 
+    font-weight: bold; 
     padding: 10px;
     margin: 0;
 }
 
-/* Style for box images */
+
 .box img {
     max-width: 100%;
     height: auto;
 }
 
-/* Add a media query to change the layout for smaller screens */
+
 @media (max-width: 768px) {
     .box-container {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-columns: 1fr; 
+        padding: 10px 25px;
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+    }
+   
+    .box {
+        width: 100%; 
+        padding: 0px;
     }
 
-    /* Adjust the box width for smaller screens */
-    .box {
-        width: 100%; /* Full width for boxes on smaller screens */
+    .box h3,.box {
+
+
+        border-radius: 0px;
     }
+
+    .boxwsp {
+    
+        padding: 14px 24px 
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .box-container {
+        grid-template-columns: 1fr; 
+        padding: 10px 25px;
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+    }
+   
+    .box {
+        width: 100%; 
+        padding: 0px;
+    }
+
+    .box h3,.box {
+
+
+        border-radius: 0px;
+    }
+
+    .boxwsp {
+    
+        padding: 14px 24px 
+    }
+
 }
