@@ -128,3 +128,28 @@ h3{
     font-style: normal;
     font-weight: 700;
 }
+
+.bg-alter > .contenido > .seccion-oscura > #primerp {
+    color : #ffffff;
+}
+.bg-alter > .contenido > .seccion-oscura > #segundop {
+    color : #ffffff;
+}
+.bg-alter > .contenido > .seccion-oscura > #tercerp {
+    color : #ffffff;
+}
+.bg-alter > .contenido > .seccion-oscura > #cuartop {
+    color : #ffffff;
+}
+.bg-alter > .contenido > .seccion-oscura > #quintop {
+    color : #ffffff;
+}
+.bg-alter > .contenido > .seccion-oscura > #sextop {
+    color : #ffffff;
+}
+.bg-alter > .contenido > #septimop {
+    color : #ffffff;
+}
+.bg-alter > .contenido > h3 {
+    color : #ffffff;
+}

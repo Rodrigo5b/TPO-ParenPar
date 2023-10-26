@@ -50,15 +50,16 @@ h2{
     border-radius: 2rem;
     padding-bottom: 60px;
 }
-.formoscuro {
+.bg-alter > .contenido > .contenedorform > .formulario {
     background-color: #222;
 }
-.formoscuro label {
+.bg-alter > .contenido > .contenedorform > .formulario > label {
     color: #ffffff;
 }
-.formoscuro h2 {
+.bg-alter > .contenido > .contenedorform > .formulario > h2 {
     background: var(--background-alter);
 }
+
 form > label {
     font-size: 24px;
     margin: 0 20px;
