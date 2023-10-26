@@ -1,11 +1,5 @@
 @import url(../estilos/root.css);
-
 /*Contenido de la pagina*/
-
-body{
-    background: var(--background-primario);
-} 
-
 h1{
     display:flex;
     justify-content: center;
@@ -16,7 +10,6 @@ h1{
     height: 4rem;
 }
     /* Formulario */
-    
 h2{
     padding: 15px 0;
     margin-top: 2rem;
@@ -39,7 +32,6 @@ h2{
     padding: 55px 65px;
     gap: 130px;
  }   
-
 .formulario {
     font-family: 'Quicksand', sans-serif;
     background-color: #f9f0d4;
@@ -63,9 +55,8 @@ h2{
 form > label {
     font-size: 24px;
     margin: 0 20px;
-   color: #000000;
+    color: #000000;
 }
-    
 input, form > textarea  {
     background-color: #B0CCDC;
     border-radius: 1rem;
@@ -73,8 +64,10 @@ input, form > textarea  {
     margin: 21px 20px;
     padding: 24px 0;
     padding-left: 15px;
-    outline: none;
     border: none;
+}
+[type="submit"] {
+    cursor: pointer;
 }
     
 form > textarea {
@@ -82,11 +75,10 @@ form > textarea {
     resize: vertical;
 }
     
-input::placeholder{
+input::placeholder , textarea::placeholder{
     color: #ffffff;
     font-size: 1rem;
 }
-
 @media(max-width:1280px){
     .formulario{
         border-radius: 15px;
@@ -115,7 +107,6 @@ input::placeholder{
         width: 100%;
      }
 }
-
 @media(max-width:768px){
     #perro{
         display: none;

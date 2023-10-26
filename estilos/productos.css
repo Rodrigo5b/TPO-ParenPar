@@ -1,7 +1,5 @@
 @import url(../estilos/root.css);
-/* Boton tema -------------------------------------------------------------------------------*/
 
-/* Contenido de la página -------------------------------------------------------------------------*/
 .contenido{
     text-align: center;
 }
@@ -12,7 +10,6 @@
     padding: 0 25px;
     margin-top: 33px;
 }
-
 h3,h5{
     color:var(--color-terciario);
     background: var(--color-primario);
@@ -56,11 +53,7 @@ h5{
     width: 156px;
     object-fit: cover;
 }
-/* Pie de Página ---------------------------------------------------------------------------------------*/
 @media (min-width:768px) {
-    /* Header ----------------------------- */
-    /* Main ---------------------------------------------------- */
-
     .div-categorias{
         padding: 0px 56px;
         margin-top: 56px;
@@ -73,6 +66,7 @@ h5{
     h5{
         font-size: 22px;
         padding: 7px 33px;
+        cursor: pointer;
     }
     .carrousel-cartas{
         overflow-x: unset;
@@ -96,13 +90,11 @@ h5{
         height: 100%;
         margin: 0px 0px 10px 0px;
     }
-    /* Pie de página ------------------------------------------------------------ */
-
 }
-
 @media (min-width:1280px) {
-    /* Cabecera --------------------------------------------- */
-    /* Nav responsive  ---------------*/
+    .cuerpo .cabecera{
+        padding: 51px 163px;
+    }
     .div-categorias{
         padding: 0 162px;
         margin-top: 98px;
@@ -128,5 +120,4 @@ h5{
     .carta b{
         font-size: 20px;
     }
-    /* Pie de pagina desktop ------------------------ */
 }

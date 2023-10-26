@@ -76,10 +76,8 @@ h3{
     font-weight: 700;
 }
 
-.bg-alter > .contenido > .seccion-oscura > .divmayor > .divhijo > p {
-    color:#ffffff;
-}
-.bg-alter > .contenido > .seccion-oscura > .divmayor > p {
+
+.bg-alter p {
     color:#ffffff;
 }
 .bg-alter > .contenido > h3 {
