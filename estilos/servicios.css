@@ -18,6 +18,9 @@ p {
 padding: 16px 6px;
 color: #1e1e1e;
 }
+.bg-alter main p{
+    color: white;
+}
 
 .box h3 {
     background-color: #fff; 
@@ -34,10 +37,11 @@ color: #1e1e1e;
 }
 
 .boxwsp {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    cursor: pointer;
 }
 
 
