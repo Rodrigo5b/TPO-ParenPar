@@ -54,6 +54,9 @@ h5{
     object-fit: cover;
 }
 @media (min-width:768px) {
+    .cuerpo .cabecera{
+        padding: 21px 56px;
+    }
     .div-categorias{
         padding: 0px 56px;
         margin-top: 56px;
