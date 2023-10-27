@@ -1,6 +1,5 @@
 @import url(../estilos/root.css);
 /*Contenido de la pagina*/
-<<<<<<< HEAD
 h1{
     display:flex;
     justify-content: center;
@@ -11,8 +10,6 @@ h1{
     height: 4rem;
 }
     /* Formulario */
-=======
->>>>>>> 849dbb4fcf4861f4d935b23de520de74087b2dfc
 h2{
     padding: 15px 0;
     margin-top: 2rem;
