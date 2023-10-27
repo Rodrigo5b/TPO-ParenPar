@@ -32,3 +32,8 @@
 * Hernán Rodrigo Bustamante:
 - Gmail: @bustamanterodrigo15@gmail.com
 - Website <a href="https://rodrigo5b.github.io" target="_blank">Portafolio</a>
+
+
+* Garcia Roman Nicolas
+- Gmail: @romannicolasgarcia@gmail.com
+
