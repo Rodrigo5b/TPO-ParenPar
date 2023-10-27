@@ -80,6 +80,16 @@ input::placeholder , textarea::placeholder{
     color: #ffffff;
     font-size: 1rem;
 }
+
+.warnings {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    text-align:center;
+    margin:auto;
+    color: #f37445;
+}
+
 @media(max-width:1280px){
     .formulario{
         border-radius: 15px;

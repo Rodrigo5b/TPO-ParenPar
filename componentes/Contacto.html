@@ -46,7 +46,7 @@
                 <div id="perro">
                     <img src="../img/contacto/perrito.png" alt="foto de un perro pequeño">
                 </div>
-                <form class="formulario" action="https://formsubmit.co/46ab543253a01db5bf8d8820d8c81809" method="POST">
+                <form class="formulario" id="form" action="https://formsubmit.co/46ab543253a01db5bf8d8820d8c81809" method="POST">
                     <h2>Formulario de contacto</h2>
 
                     <label for="nombre"> Nombre: </label>
@@ -67,6 +67,7 @@
                     <textarea name="Mensaje" id="mensaje" rows="10" cols="40" placeholder="Escribe tu mensaje..."></textarea>
                     
                     <input type="submit" value="Enviar">
+                    <p class="warnings" id="warnings"></p>
 
                     <input type="hidden" name="_next" value="https://rodrigo5b.github.io/TPO-ParenPar/componentes/Contacto.html">
                     <input type="hidden" name="_captcha" value="false">
@@ -90,5 +91,6 @@
         </footer>
         <script src="../js/menu.js"></script>
         <script src="../js/boton-tematico.js"></script>
+        <script src="../js/formulario.js"></script>
     </body>
 </html>
