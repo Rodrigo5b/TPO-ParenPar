@@ -8,7 +8,7 @@ const parrafo = document.getElementById("warnings");
 const borrar = document.getElementById("borrar")
 
 form.addEventListener("submit", e=>{
-  e.preventDefault()
+
   let warnings = "";
   let regexEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
   let entrar = false;
@@ -35,8 +35,10 @@ form.addEventListener("submit", e=>{
   }
   if(entrar){
     parrafo.innerHTML = warnings;
+    e.preventDefault();
   } else{    
     parrafo.innerHTML = "• Enviado";
     // form.submit();
+      
   }
 })
