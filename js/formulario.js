@@ -35,9 +35,10 @@ form.addEventListener("submit", e=>{
   }
   if(entrar){
     parrafo.innerHTML = warnings;
+    e.preventDefault();
   } else{    
     parrafo.innerHTML = "• Enviado";
     // form.submit();
-      e.preventDefault();
+      
   }
 })
