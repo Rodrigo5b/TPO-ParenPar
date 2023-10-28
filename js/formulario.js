@@ -5,12 +5,13 @@ const mensaje = document.getElementById("mensaje");
 const numero = document.getElementById("number");
 const form = document.getElementById("form");
 const parrafo = document.getElementById("warnings");
+const borrar = document.getElementById("borrar")
 
 form.addEventListener("submit", e=>{
-  
+  e.preventDefault()
   let warnings = "";
   let regexEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-  let entrar = false;;
+  let entrar = false;
   parrafo.innerHTML = "";
   if(nombre.value.length <3){
     warnings += `• El nombre no es válido debe contener al menos 3 carácteres <br>`;
@@ -34,10 +35,8 @@ form.addEventListener("submit", e=>{
   }
   if(entrar){
     parrafo.innerHTML = warnings;
-    e.preventDefault()
-  } else{
+  } else{    
     parrafo.innerHTML = "• Enviado";
-     //  form.submit();
-    // form.classList.toggle("listo")
+    // form.submit();
   }
 })
